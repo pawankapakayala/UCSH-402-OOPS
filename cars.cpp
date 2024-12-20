@@ -1,59 +1,59 @@
 #include <iostream>
 using namespace std; // This std has all the standard libraries of C++
 
-class cars {
-    string company;
-    string model;
-    float price;
+class flowers {
+    string name;
+    string colour;
+    float petal_length;
     int seating_capacity;
-    float mileage;
+    float petal_width;
 
 public:
     // Member Function to input car details
-    void setDetails() {
+    void set() {
         cout << "Enter Company Name: ";
-        cin >> company;
+        cin >> name;
         cout << "Enter Model Name: ";
-        cin >> model;
+        cin >> colour;
         cout << "Enter Price:";
-        cin >> price;
+        cin >> petal_length;
         cout << "Enter Seating Capacity: ";
         cin >> seating_capacity;
         cout << "Enter Mileage (in km/l): ";
-        cin >> mileage;
+        cin >> petal_width;
     }
 
     // Function to display car details
-    void displayDetails() {
-        cout << "Company: " << company << endl;
-        cout << "Model: " << model << endl;
-        cout << "Price:" << price << endl;
+    void display() {
+        cout << "Company: " << name << endl;
+        cout << "Model: " << colour << endl;
+        cout << "Price:" << petal_length << endl;
         cout << "Seating Capacity: " << seating_capacity << " persons" << endl;
-        cout << "Mileage: " << mileage << " km/l" << endl;
+        cout << "Mileage: " << petal_width << " km/l" << endl;
     }
 };
 
 int main() {
-    cars c1, c2, c3;
+    flowers c1, c2, c3;
 
     // Take input from user for car details
     cout << "Enter details for Car 1:" << endl;
-    c1.setDetails();
+    c1.set();
     cout << "Enter details for Car 2:" << endl;
-    c2.setDetails();
+    c2.set();
     cout << "Enter details for Car 3:" << endl;
-    c3.setDetails();
+    c3.set();
 
     // Display car details
     cout<<endl;
     cout << "Car 1 Details:" << endl;
-    c1.displayDetails();
+    c1.display();
     cout<<endl;
     cout << "Car 2 Details:" << endl;
-    c2.displayDetails();
+    c2.display();
     cout<<endl;
     cout << "Car 3 Details:" << endl;
-    c3.displayDetails();
+    c3.display();
     cout<<endl;
     return 0;
 }
