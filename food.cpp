@@ -1,18 +1,18 @@
-#include <iostream>
+#include <iostream>//iostreams which allow you to read from files and the keyboard, and to write to files and the display
 using namespace std;//this std has all the standard libraries of c++
-class food
+class food//creating a class
 {
     string name;
     float cost;
     int quantity;
     public:
         void set(){//member function
-            cout<<"Enter food item:";
-            cin>>name;
-            cout<<"Cost of the item:";
-            cin>>cost; 
-            cout<<"Quantity:";
-            cin>>quantity;     
+            cout<<"Enter food item:";//cout prints the output stream of bits on screen
+            cin>>name;//cin belongs to input stream class
+            cout<<"Cost of the item:";//cout prints the output stream of bits on screen
+            cin>>cost; //cin belongs to input stream class
+            cout<<"Quantity:";//cout prints the output stream of bits on screen
+            cin>>quantity;//cin belongs to input stream class   
         }
         // Member function to calculate discounted cost
     float getDiscount() {
@@ -29,15 +29,15 @@ class food
     }
 };
 
-int main(){
-    food f1, f2, f3;
+int main(){// In C++, main( )always has return type of int.
+    food f1, f2, f3;//creating an object...memory is alocated here
 
     //Input data from user
-    cout<<"Enter food item details:"<<endl;
+    cout<<"Enter food item details:"<<endl;//cout prints the output stream of bits on screen
     f1.set();
-    cout<<"Enter food item details:"<<endl;
+    cout<<"Enter food item details:"<<endl;//cout prints the output stream of bits on screen
     f2.set();
-    cout<<"Enter food iteam details:"<<endl;
+    cout<<"Enter food iteam details:"<<endl;//cout prints the output stream of bits on screen
     f3.set();
     // Displaying discounted costs
     cout << "\nDisplaying discounted costs of food items:" << endl;

@@ -1,6 +1,6 @@
-#include <iostream>
+#include <iostream>//iostreams which allow you to read from files and the keyboard, and to write to files and the display
 using namespace std;//all standard libraries of c++ are wrapped in std
-int main()
+int main()// In C++, main( )always has return type of int.
 {
 	int a=6;
 	int b=0;
