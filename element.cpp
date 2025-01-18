@@ -10,11 +10,14 @@ public:
 		cout<<"Enter Element Name:";//cout prints the output stream of bits on screen
 		cin>>n;//cin belongs to input stream class
 	}
-	void display(){//member functions
-		cout<<"Atomic Number is:"<<a<<endl;//cout prints the output stream of bits on screen
-		cout<<"Element Name is:"<<n<<endl;//cout prints the output stream of bits on screen
-	}
+	void display(); //member function declaring
 };
+
+inline void element::display(){//member function defining
+	cout<<"Atomic Number is:"<<a<<endl;//cout prints the output stream of bits on screen
+	cout<<"Element Name is:"<<n<<endl;//cout prints the output stream of bits on screen
+};
+
 int main()//return int type
 {
 	element e1,e2;//creating an object...memory is alocated here
