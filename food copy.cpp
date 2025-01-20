@@ -45,5 +45,5 @@ int main() { // In C++, main() always has a return type of int.
     f3.set("Pasta", 100.0, 7); // Passing details for food item 3.
     f3.displayDiscountedCost();
 
-    return 0; // Indicating successful program termination.
+    return 0; 
 };
