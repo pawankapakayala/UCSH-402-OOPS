@@ -7,7 +7,16 @@ class student//creating a class
     int no_of_subjects;
     float total_marks;
     public:
-        void set();//declaring the function
+        void set(){
+            cout<<"Enter your name:";//cout prints the output stream of bits on screen
+            cin>>name;//cin belongs to input stream class
+            cout<<"Enter semester:";//cout prints the output stream of bits on screen
+            cin>>semester;//cin belongs to input stream class
+            cout<<"No. of subjects:";//cout prints the output stream of bits on screen
+            cin>>no_of_subjects;//cin belongs to input stream class
+            cout<<"Total marks secured:";//cout prints the output stream of bits on screen
+            cin>>total_marks;//cin belongs to input stream class
+        };//declaring the function
         float getAverage() { // Function to calculate average marks
         return total_marks / no_of_subjects;
     }
@@ -16,18 +25,6 @@ class student//creating a class
         cout << "Average marks of " << name << ": " << getAverage() <<endl;
     }
 
-};
-inline void student::set()//defining the function
-{
-    //member function
-    cout<<"Enter your name:";//cout prints the output stream of bits on screen
-    cin>>name;//cin belongs to input stream class
-    cout<<"Enter semester:";//cout prints the output stream of bits on screen
-    cin>>semester;//cin belongs to input stream class
-    cout<<"No. of subjects:";//cout prints the output stream of bits on screen
-    cin>>no_of_subjects;//cin belongs to input stream class
-    cout<<"Total marks secured:";//cout prints the output stream of bits on screen
-    cin>>total_marks;//cin belongs to input stream class    
 };
 
 int main(){// In C++, main( )always has return type of int.
