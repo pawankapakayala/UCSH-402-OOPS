@@ -5,18 +5,16 @@ class complex//creating a class
     int i;
     int r;
     public:
-        void set();//declaring the function
+        void set(){
+            cout<<"Enter real part of complex no. :";//cout prints the output stream of bits on screen
+            cin>>r;//cin belongs to input stream class
+            cout<<"Enter imaginary part of complex no. :";//cout prints the output stream of bits on screen
+            cin>>i;//cin belongs to input stream class
+        };//declaring the function
         void display(){//member function
             cout<<r<<"+"<<i<<"i"<<endl;//cout prints the output stream of bits on screen
         }        
         friend complex add(complex a, complex b);
-};
-inline void complex::set(){//defining the function
-    cout<<"Enter real part of complex no. :";//cout prints the output stream of bits on screen
-    cin>>r;//cin belongs to input stream class
-    cout<<"Enter imaginary part of complex no. :";//cout prints the output stream of bits on screen
-    cin>>i;//cin belongs to input stream class
-
 };
 
 // Function to add two complex numbers
