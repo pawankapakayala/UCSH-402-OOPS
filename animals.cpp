@@ -5,7 +5,13 @@ class animals//creating a class
     string name;
     float population;
     public:
-        void set();//member functios declaring
+    //member functios
+        void set(){
+            cout<<"Enter animal name:";//cout prints the output stream of bits on screen
+            cin>>name;//cin belongs to input stream class
+            cout<<"Enter population:";//cout prints the output stream of bits on screen
+            cin>>population;//cin belongs to input stream class
+        };
         float getPopulation() { return population; }
         static void minPopulation(animals a1, animals a2, animals a3){
             if (a1.population <= a2.population && a1.population <= a3.population)
@@ -17,13 +23,6 @@ class animals//creating a class
 
         }
 
-};
-
-inline void animals::set(){//function defining
-    cout<<"Enter animal name:";//cout prints the output stream of bits on screen
-    cin>>name;//cin belongs to input stream class
-    cout<<"Enter population:";//cout prints the output stream of bits on screen
-    cin>>population;//cin belongs to input stream class
 };
 
 int main(){// In C++, main( )always has return type of int.
