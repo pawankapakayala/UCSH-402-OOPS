@@ -35,4 +35,4 @@ int main()//return int type
 	cout <<"Entered element is: "<<element<<"\n";
 	cout <<"Entered atomic number is: "<<atmoic_no<<"\n";
 	return 0;
-}
+};
