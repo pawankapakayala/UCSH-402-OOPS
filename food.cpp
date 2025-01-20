@@ -44,8 +44,5 @@ int main(){// In C++, main( )always has return type of int.
     f1.displayDiscountedCost();
     f2.displayDiscountedCost();
     f3.displayDiscountedCost();
-
     return 0;
-
-
 };
