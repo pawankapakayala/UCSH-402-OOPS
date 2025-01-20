@@ -10,12 +10,10 @@ public:
 		cout<<"Enter Element Name:";//cout prints the output stream of bits on screen
 		cin>>n;//cin belongs to input stream class
 	}
-	void display(); //member function declaring
-};
-
-inline void element::display(){//member function defining
-	cout<<"Atomic Number is:"<<a<<endl;//cout prints the output stream of bits on screen
-	cout<<"Element Name is:"<<n<<endl;//cout prints the output stream of bits on screen
+	void display(){
+		cout<<"Atomic Number is:"<<a<<endl;//cout prints the output stream of bits on screen
+	    cout<<"Element Name is:"<<n<<endl;//cout prints the output stream of bits on screen
+	}; //member function declaring
 };
 
 int main()//return int type
