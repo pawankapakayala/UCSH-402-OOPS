@@ -8,7 +8,16 @@ class countries {//creating a class
     float gdp;
 
 public:
-    void set();//member function declaring
+    void set(){
+        cout << "Enter country name: ";//cout prints the output stream of bits on screen
+        cin >> name;//cin belongs to input stream class
+        cout << "Enter area in sq.km: ";//cout prints the output stream of bits on screen
+        cin >> area;//cin belongs to input stream class
+        cout << "Enter population: ";//cout prints the output stream of bits on screen
+        cin >> population;//cin belongs to input stream class
+        cout << "Enter GDP: ";//cout prints the output stream of bits on screen
+        cin >> gdp;//cin belongs to input stream class
+    };//member function 
 
     string getName() { return name; }
     float getArea() { return area; }
@@ -40,17 +49,6 @@ public:
         else
             cout << "Country with max GDP: " << c3.name << c3.gdp << endl;//cout prints the output stream of bits on screen
     }
-};
-
-inline void countries::set(){//member function defining
-    cout << "Enter country name: ";//cout prints the output stream of bits on screen
-    cin >> name;//cin belongs to input stream class
-    cout << "Enter area in sq.km: ";//cout prints the output stream of bits on screen
-    cin >> area;//cin belongs to input stream class
-    cout << "Enter population: ";//cout prints the output stream of bits on screen
-    cin >> population;//cin belongs to input stream class
-    cout << "Enter GDP: ";//cout prints the output stream of bits on screen
-    cin >> gdp;//cin belongs to input stream class
 };
 
 int main() {// In C++, main( )always has return type of int.
