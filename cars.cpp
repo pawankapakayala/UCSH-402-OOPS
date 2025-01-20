@@ -24,15 +24,13 @@ public:
     }
 
     // Function to display car details
-    void display();//member function declaring
-};
-
-inline void flowers::display(){//member function defining
-    cout << "Company: " << name << endl;//cout prints the output stream of bits on screen
-    cout << "Model: " << colour << endl;//cout prints the output stream of bits on screen
-    cout << "Price:" << petal_length << endl;//cout prints the output stream of bits on screen
-    cout << "Seating Capacity: " << seating_capacity << " persons" << endl;//cout prints the output stream of bits on screen
-    cout << "Mileage: " << petal_width << " km/l" << endl;//cout prints the output stream of bits on screen
+    void display(){
+        cout << "Company: " << name << endl;//cout prints the output stream of bits on screen
+        cout << "Model: " << colour << endl;//cout prints the output stream of bits on screen
+        cout << "Price:" << petal_length << endl;//cout prints the output stream of bits on screen
+        cout << "Seating Capacity: " << seating_capacity << " persons" << endl;//cout prints the output stream of bits on screen
+        cout << "Mileage: " << petal_width << " km/l" << endl;//cout prints the output stream of bits on screen
+    };//member function declaring
 };
 
 int main() {// In C++, main( )always has return type of int.
