@@ -41,6 +41,7 @@ int main(){// In C++, main( )always has return type of int.
 
     cout<<"Min population"<<endl;//cout prints the output stream of bits on screen
     animals::minPopulation(a1,a2,a3);
+    cout<<sizeof(a1)<<endl;
 
     return 0;
-};
+}
