@@ -10,7 +10,7 @@ class Max{
 };
 	
 int main(){
-	int a1;
+	int a1; 	
 	Max m1;
 	a1=m1.max(4,5);
 	cout<< a1<< endl;
