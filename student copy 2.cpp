@@ -15,4 +15,4 @@ int main(){// In C++, main( )always has return type of int.
     cout<<"Average Marks: "<<a1<<endl;
     int a2=s1.getAverage("kalyan",6,700);//declaring the vriable when required
     cout<<"Average Marks: "<<a2<<endl;
-};
+}
