@@ -14,27 +14,24 @@ class Company // creating a class
     long allocated_funds = 0; // variable to track the total allocated funds for this object
 
 public:
-    void allocate_funds(long funds) // function to allocate funds
+    long allocate_funds(long funds) // function to allocate funds
     {
-        allocated_funds = funds * 100000; // converting lakhs to rupees and storing in allocated_funds
-    }
-
-    long get_allocated_funds() // function to get the allocated funds for this object
-    {
-        return allocated_funds; // returns the allocated funds
+        allocated_funds += funds * 100000; // converting lakhs to rupees and adding to allocated_funds
+        return allocated_funds;
     }
 };
 
 int main() // in C++, main() always has a return type of int
 {
+    long f1, f2, f3=0;
     Company a, b, c; // creating objects for each branch... memory is allocated here
 
-    a.allocate_funds(15); // allocating funds to A
-    b.allocate_funds(14); // allocating funds to B
-    c.allocate_funds(9);  // allocating funds to C
+    f1=a.allocate_funds(15); // allocating funds to A
+    f2=b.allocate_funds(14); // allocating funds to B
+    f3=c.allocate_funds(9);  // allocating funds to C
 
     // Calculating the total allocated funds
-    long total_allocated_funds = a.get_allocated_funds() + b.get_allocated_funds() + c.get_allocated_funds();
+    long total_allocated_funds = f1+f2+f3;
 
     // Calculating the remaining funds
     long initial_capital = 5000000; // total initial capital of the company in rupees
