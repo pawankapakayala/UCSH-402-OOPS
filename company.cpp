@@ -12,13 +12,28 @@ class Company // creating a class
 {
     long initial_capital = 5000000; // initial capital of the company in rupees (50 lakhs)
     long allocated_funds = 0; // variable to track the total allocated funds for this object
+    long required_funds; // variable to store the funds required by each branch
 
 public:
+    long get_required_funds()
+    {
+        cin >> required_funds; // cin reads the input stream of bits from the keyboard
+        if (required_funds > initial_capital) // if the required funds are more than the initial capital
+        {
+            cout << "Insufficient funds" << endl; // cout prints the output stream of bits on screen
+            return 0;
+        }
+        else
+        {
+            return required_funds; // returning the required funds
+        }
+    }
     long allocate_funds(long funds) // function to allocate funds
     {
-        allocated_funds += funds * 100000; // converting lakhs to rupees and adding to allocated_funds
+        long allocated_funds = funds; // allocating funds to the branch
         return allocated_funds;
     }
+
 };
 
 int main() // in C++, main() always has a return type of int
@@ -26,9 +41,15 @@ int main() // in C++, main() always has a return type of int
     long f1, f2, f3=0;
     Company a, b, c; // creating objects for each branch... memory is allocated here
 
-    f1=a.allocate_funds(15); // allocating funds to A
-    f2=b.allocate_funds(14); // allocating funds to B
-    f3=c.allocate_funds(9);  // allocating funds to C
+    cout<<"Enter the funds required by Branch A: "<<endl; // cout prints the output stream of bits on screen
+    f1=a.get_required_funds(); // cin reads the input stream of bits from the keyboard
+    f1=a.allocate_funds(f1); // allocating funds to A
+    cout<<"Enter the funds required by Branch B: "<<endl; // cout prints the output stream of bits on screen
+    f2=b.get_required_funds(); // cin reads the input stream of bits from the keyboard
+    f2=b.allocate_funds(f2); // allocating funds to B
+    cout<<"Enter the funds required by Branch C: "<<endl; // cout prints the output stream of bits on screen
+    f3=c.get_required_funds(); // cin reads the input stream of bits from the keyboard
+    f3=c.allocate_funds(f3);  // allocating funds to C
 
     // Calculating the total allocated funds
     long total_allocated_funds = f1+f2+f3;
