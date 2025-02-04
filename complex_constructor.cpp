@@ -36,6 +36,6 @@ int main() { // In C++, main() always has a return type of int
 
     cout << "The sum of the two complex numbers is: ";
     sum.display(); // Displaying the result
-
+    
     return 0;
 }
