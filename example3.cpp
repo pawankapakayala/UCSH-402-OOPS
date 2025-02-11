@@ -16,7 +16,7 @@ int main() {
 	Student s1;
 	// dynamically declare Student object
     Student *ptr = new Student(); //Student::Student() have to understand once we learn Constrcutors
-    ptr->setAge();
+    ptr->setAge();//ptr is a pointer which points to the object instanciated by the constructor function Student()
     // call getAge() function
     ptr->getAge();
     // ptr memory is released
