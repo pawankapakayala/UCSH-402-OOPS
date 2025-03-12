@@ -15,6 +15,7 @@ class b : public a{
 
 int main(){
     b obj;
+    a obj1;
     obj.display1();
     obj.display1(); //this will call the function of the child class
 }
