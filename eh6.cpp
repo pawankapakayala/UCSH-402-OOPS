@@ -9,7 +9,7 @@ class myexception: public exception
   {
     return "My exception happened";
   }
-} myex;
+} myex;//myex is called a global object
 
 int main () {
   try
@@ -18,7 +18,7 @@ int main () {
   }
   catch (exception &e)
   {
-    cout << e.what() << '\n';
+    cout << e.what() << '\n';//what() is a virtual function in the exception class
   }
   return 0;
 }
