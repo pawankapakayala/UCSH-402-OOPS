@@ -43,18 +43,27 @@ int main() {
             case 3:
                 Account::displayAllAccounts();
                 break;
-            case 4:
-                if (student.getAccountID().empty()) {
-                    cout << "-- Please create or load an account first! --\n";
+            case 4: {
+                string accountID;
+                float depositAmount;
+                cout << "\n++ Deposit Money ++\n";
+                cout << "Enter Account ID: ";
+                cin >> accountID;
+
+                string studentName;
+                float balance = getBalanceFromFile(accountID, studentName);
+
+                if (balance == -1) {
+                    cout << "-- Account Not Found! --\n";
                 } else {
-                    float depositAmount;
-                    cout << "\n++ Deposit Money ++\n";
+                    StudentAccount tempAccount(accountID, studentName, balance);
                     cout << "Enter deposit amount: ₹";
                     cin >> depositAmount;
-                    student.deposit(depositAmount);
-                    student.displayBalance();
+                    tempAccount.deposit(depositAmount);
+                    tempAccount.displayBalance();
                 }
                 break;
+            }
             case 5:
                 cout << "\n++ Exiting HSBC System. Sairam! ++\n";
                 break;

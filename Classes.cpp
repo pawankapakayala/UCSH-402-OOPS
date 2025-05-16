@@ -26,7 +26,7 @@ class Account {
         virtual void displayBalance() const {
             cout << "Balance: " << balance << endl;
         }
-    
+
         // Method to deposit money
         void deposit(float amount) {
             string inputID;
@@ -155,6 +155,11 @@ class Account {
             cout << ">> Balance    : ₹" << getBalance() << " \n";
             cout << "====================================\n";
         }
+        // Overriding the virtual function (Polymorphism)
+        void displayBalance() const override {
+        cout << "** Student Balance: ₹" << balance << " **" << endl;
+        }
+
     };
     
     //Exception Handling: Custom Exception Class
